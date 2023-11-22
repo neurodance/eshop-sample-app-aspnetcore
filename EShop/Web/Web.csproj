@@ -1,24 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web" ToolsVersion="15.0">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
+	
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>1a842b3d-1717-4876-8b19-e239e05c86a2</UserSecretsId>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="BundlerMinifier.TagHelpers" Version="3.2.449" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.7">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Telerik.Reporting.OpenXmlRendering" Version="16.2.22.1109" />
-    <PackageReference Include="Telerik.Reporting.Services.AspNetCore" Version="16.2.22.1109" />
-    <PackageReference Include="Telerik.Reporting.WebServiceDataSource" Version="16.2.22.1109" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.0" />
-    <PackageReference Include="Telerik.UI.for.AspNet.Core" Version="2023.2.829" />
-    <PackageReference Include="Telerik.Web.Captcha" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Analyzers" Version="8.0.0" />
+    <PackageReference Include="Telerik.Reporting" Version="17.2.23.1114" />
+    <PackageReference Include="Telerik.Reporting.Services.AspNetCore" Version="17.2.23.1114" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.0" />
+    <PackageReference Include="Telerik.UI.for.AspNet.Core" Version="2023.3.1114" />
+    <PackageReference Include="Telerik.Web.Captcha" Version="1.1.2" />
   </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
